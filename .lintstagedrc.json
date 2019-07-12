@@ -1,0 +1,4 @@
+{
+  "*.jsx": ["prettier --single-quote --write", "npm run lint", "git add"],
+  "*.js": ["prettier --single-quote --write", "npm run lint", "git add"]
+}

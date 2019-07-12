@@ -16,7 +16,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "prettier --write"
+      "pre-commit": "prettier --write",
+      "pre-push": "npm run test"
     }
   },
   "eslintConfig": {
