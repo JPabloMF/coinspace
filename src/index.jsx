@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-/* Components */
+/* screens */
 import SignIn from './screens/signin';
 import SignUp from './screens/signup';
 import Main from './screens';
