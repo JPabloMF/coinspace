@@ -5,7 +5,14 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css,scss}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   },
   "scripts": {
     "start": "react-scripts start",
@@ -16,7 +23,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "prettier --write"
+      "pre-commit": "lint-staged"
     }
   },
   "eslintConfig": {
@@ -38,6 +45,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.14.2",
     "husky": "^3.0.0",
-    "prettier": "^1.12.1"
+    "lint-staged": "^9.2.0",
+    "prettier": "^1.18.2"
   }
 }

@@ -1,0 +1,17 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+#
+/src/index.jsx
+/src/serviceWorker.js
+/src/_storybookChapters
+/src/components/**/stories
+/src/pages
