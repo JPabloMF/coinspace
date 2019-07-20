@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 /* screens */
@@ -18,10 +17,6 @@ const App = () => {
       </Switch>
     </Router>
   );
-};
-
-App.propTypes = {
-  props: PropTypes.object.isRequired
 };
 
 export default App;

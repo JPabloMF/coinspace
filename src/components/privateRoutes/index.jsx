@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Route, Redirect } from 'react-router-dom';
 
-const auth = false;
+const auth = true;
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
   return (
@@ -24,12 +24,17 @@ const PrivateRoute = ({ component: Component, ...rest }) => {
   );
 };
 
+PrivateRoute.defaultProps = {
+  Component: null,
+  rest: {}
+};
+
 PrivateRoute.propTypes = {
   Component: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
-  ]).isRequired,
-  rest: PropTypes.object.isRequired
+  ]),
+  rest: PropTypes.object
 };
 
 export default PrivateRoute;
