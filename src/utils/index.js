@@ -1,13 +1,6 @@
-const createActionTypes = (module, action) => {
-  const upperModule = module.toUpperCase();
-  const upperAction = action.toUpperCase();
-
-  return {
-    [`${upperModule}_FETCH_${upperAction}`]: `${upperModule}_FETCH_${upperAction}`,
-    [`${upperModule}_SAVE_${upperAction}`]: `${upperModule}_SAVE_${upperAction}`,
-    [`${upperModule}_SUCCESS_${upperAction}`]: `${upperModule}_SUCCESS_${upperAction}`,
-    [`${upperModule}_FAILED_${upperAction}`]: `${upperModule}_FAILED_${upperAction}`
-  };
-};
-
-export { createActionTypes };
+export const createActionTypes = (module, action) => ({
+  [`${action}_${module}`]: `${action}_${module}`,
+  [`${action}_${module}_REQUEST`]: `${action}_${module}_REQUEST`,
+  [`${action}_${module}_SUCCESS`]: `${action}_${module}_SUCCESS`,
+  [`${action}_${module}_FAILED`]: `${action}_${module}_FAILED`
+});
