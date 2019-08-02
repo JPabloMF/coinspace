@@ -1,8 +1,8 @@
 import types from '../actionTypes';
 
-const chatReducer = (state = {}, action) => {
+const chatReducer = (state = { status: 'NOT_LOADED', data: {} }, action) => {
   switch (action.type) {
-    case types.CHAT_FETCH_INITIAL:
+    case types.FETCH_CHAT:
       return {
         ...state,
         action

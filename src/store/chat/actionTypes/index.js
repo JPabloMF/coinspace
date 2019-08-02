@@ -1,7 +1,7 @@
 import { createActionTypes } from '../../../utils';
 
 const types = {
-  ...createActionTypes('CHAT', 'INITIAL')
+  ...createActionTypes('CHAT', 'FETCH')
 };
 
 export default types;
