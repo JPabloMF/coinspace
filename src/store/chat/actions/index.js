@@ -5,8 +5,8 @@ export const fetchChatRequest = data => ({
   type: types.FETCH_CHAT_REQUEST,
   data
 });
-export const fetchChatSuccess = result => ({
+export const fetchChatSuccess = data => ({
   type: types.FETCH_CHAT_SUCCESS,
-  result
+  data
 });
 export const fetchChatFailed = err => ({ type: types.FETCH_CHAT_FAILED, err });
